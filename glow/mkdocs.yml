@@ -1,0 +1,44 @@
+site_name: Airglow - Airtasker's Glossary
+site_url: ""
+edit_uri: ""
+use_directory_urls: false
+repo_url: https://github.com/airtasker/airglow
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+  favicon: images/airglow-logo-blue.png
+  palette:
+    scheme: airtasker
+  logo: images/airglow-logo-white.png
+extra_css:
+  - stylesheets/extra.css
+extra:
+  analytics:
+    provider: google
+    property: G-CMLBHK95GP
+  consent:
+    title: Cookie consent
+    description: > 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.superfences:
+      # make exceptions to highlighting of code:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+plugins:
+    - search
+    - macros
+    - mermaid2
+extra_javascript:
+    - https://unpkg.com/mermaid/dist/mermaid.min.js
