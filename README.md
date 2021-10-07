@@ -5,7 +5,7 @@
 
 Glow is a lightweight metadata platform, enabling data analysts and analytics engineers to effortless gain full transparency on their data.
 
-## Quick start
+## Installation
 
 Glow is not yet available via pip and should be installed via:
 
